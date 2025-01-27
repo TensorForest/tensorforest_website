@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { Layout } from "../components/layout";
+import Layout from "../components/layout";
+import Footer from "../components/Footer";
 import "../globals.css";
 import Image from "next/image";
 import { SiLinkedin } from "react-icons/si";
