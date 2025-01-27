@@ -1,5 +1,4 @@
 import "./globals.css";
-import { Layout } from "./components/layout";
 
 export const metadata = {
     title: "TensorForest - AI-Drone Climate Insights",
@@ -9,9 +8,7 @@ export const metadata = {
 export function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body>
-                <Layout>{children}</Layout>
-            </body>
+            <body>{children}</body>
         </html>
     );
 }
