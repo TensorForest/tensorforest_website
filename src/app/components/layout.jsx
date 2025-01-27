@@ -80,10 +80,10 @@ export function Layout({ children }) {
                             {/* Mobile Menu Button and CTA */}
                             <div className="flex md:hidden gap-4 items-center">
                                 <Link
-                                    href="/demo"
+                                    href="/join"
                                     className="flex items-center gap-1 bg-red-900/60 hover:bg-red-900/80 px-3 py-1.5 text-sm rounded-lg"
                                 >
-                                    <span>Book demo</span>
+                                    <span>Stay updated</span>
                                     <ArrowRight className="w-3 h-3" />
                                 </Link>
                                 <button
@@ -103,10 +103,10 @@ export function Layout({ children }) {
                             {/* Desktop CTA */}
                             <div className="hidden md:block">
                                 <Link
-                                    href="/demo"
+                                    href="/join"
                                     className="flex items-center gap-2 bg-red-900/60 hover:bg-red-900/80 px-4 py-2 rounded-lg"
                                 >
-                                    <span>Book a demo</span>
+                                    <span>Stay updated</span>
                                     <ArrowRight className="w-4 h-4" />
                                 </Link>
                             </div>
@@ -152,11 +152,11 @@ export function Layout({ children }) {
                                 blog
                             </Link>
                             <Link
-                                href="/join-us"
+                                href="/join"
                                 className="text-2xl hover:text-gray-300"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
-                                join us
+                                stay updated
                             </Link>
                         </div>
                     </div>
