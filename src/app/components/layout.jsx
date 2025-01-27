@@ -83,7 +83,7 @@ export function Layout({ children }) {
                                     href="/join"
                                     className="flex items-center gap-1 bg-red-900/60 hover:bg-red-900/80 px-3 py-1.5 text-sm rounded-lg"
                                 >
-                                    <span>Stay updated</span>
+                                    <span>Join</span>
                                     <ArrowRight className="w-3 h-3" />
                                 </Link>
                                 <button

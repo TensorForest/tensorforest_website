@@ -1,7 +1,7 @@
 import "../globals.css";
 export const metadata = {
-    title: "TensorForest - AI-Drone Climate Insights",
-    description: "AI-powered drones collecting actionable climate insights",
+    title: "about us - TensorForest",
+    description: "Learn more about TensorForest and our mission",
 };
 
 export function RootLayout({ children }) {
