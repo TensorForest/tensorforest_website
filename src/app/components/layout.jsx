@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { Space_Grotesk } from "next/font/google";
 import { useState, useEffect, useRef } from "react";
+import { Analytics } from "../analytics";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -172,6 +173,7 @@ export function Layout({ children }) {
                 )}
             </header>
             <main>{children}</main>
+            <Analytics />
         </div>
     );
 }
