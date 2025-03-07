@@ -161,141 +161,161 @@ export function Home() {
                     </div>
                 </section>
 
-                {/* Footer */}
-                <footer className="bg-black border-t border-gray-800 mt-24">
-                    <div className="max-w-7xl mx-auto px-4 py-12">
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-                            <div className="space-y-4">
-                                <h3 className="text-xl font-bold">
-                                    TensorForest
-                                </h3>
-                                <p className="text-gray-400 text-sm">
+                {/* Footer - Redesigned with removed separator line and improved spacing */}
+                <footer className="bg-black pt-16 pb-8">
+                    <div className="max-w-7xl mx-auto px-4">
+                        <div className="flex flex-col md:flex-row justify-between gap-8 mb-12">
+                            {/* Company info and socials */}
+                            <div className="md:max-w-xs">
+                                <div className="flex items-center gap-2 mb-3">
+                                    <div className="w-6 h-6 bg-blue-600 rounded-md flex items-center justify-center">
+                                        <span className="text-sm font-bold">
+                                            tf
+                                        </span>
+                                    </div>
+                                    <span className="font-medium">
+                                        tensorforest
+                                    </span>
+                                </div>
+                                <p className="text-gray-400 text-sm mb-4">
                                     Advancing AI research and development for a
                                     better tomorrow.
                                 </p>
-                                <div className="flex space-x-4">
-                                    <Link href="#" aria-label="Twitter">
-                                        <Twitter className="w-5 h-5 text-gray-400 hover:text-white" />
+                                <div className="flex space-x-3">
+                                    <Link
+                                        href="#"
+                                        aria-label="Twitter"
+                                        className="w-8 h-8 rounded-full bg-gray-900/70 flex items-center justify-center hover:bg-gray-800 transition-colors"
+                                    >
+                                        <Twitter className="w-4 h-4 text-gray-300" />
                                     </Link>
-                                    <Link href="#" aria-label="LinkedIn">
-                                        <Linkedin className="w-5 h-5 text-gray-400 hover:text-white" />
+                                    <Link
+                                        href="#"
+                                        aria-label="LinkedIn"
+                                        className="w-8 h-8 rounded-full bg-gray-900/70 flex items-center justify-center hover:bg-gray-800 transition-colors"
+                                    >
+                                        <Linkedin className="w-4 h-4 text-gray-300" />
                                     </Link>
-                                    <Link href="#" aria-label="Instagram">
-                                        <Instagram className="w-5 h-5 text-gray-400 hover:text-white" />
+                                    <Link
+                                        href="#"
+                                        aria-label="Instagram"
+                                        className="w-8 h-8 rounded-full bg-gray-900/70 flex items-center justify-center hover:bg-gray-800 transition-colors"
+                                    >
+                                        <Instagram className="w-4 h-4 text-gray-300" />
                                     </Link>
-                                    <Link href="#" aria-label="Youtube">
-                                        <Youtube className="w-5 h-5 text-gray-400 hover:text-white" />
+                                    <Link
+                                        href="#"
+                                        aria-label="Youtube"
+                                        className="w-8 h-8 rounded-full bg-gray-900/70 flex items-center justify-center hover:bg-gray-800 transition-colors"
+                                    >
+                                        <Youtube className="w-4 h-4 text-gray-300" />
                                     </Link>
                                 </div>
                             </div>
 
-                            <div className="space-y-4">
-                                <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400">
-                                    Navigation
-                                </h4>
-                                <ul className="space-y-2">
-                                    <li>
-                                        <Link
-                                            href="/"
-                                            className="text-gray-400 hover:text-white text-sm"
-                                        >
-                                            Home
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="/about"
-                                            className="text-gray-400 hover:text-white text-sm"
-                                        >
-                                            About
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="/api"
-                                            className="text-gray-400 hover:text-white text-sm"
-                                        >
-                                            API
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="/demo"
-                                            className="text-gray-400 hover:text-white text-sm"
-                                        >
-                                            Demo
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="/join-us"
-                                            className="text-gray-400 hover:text-white text-sm"
-                                        >
-                                            Join Us
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
+                            {/* Navigation and other links in columns */}
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-8">
+                                <div>
+                                    <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-3">
+                                        Navigation
+                                    </h4>
+                                    <ul className="space-y-2">
+                                        <li>
+                                            <Link
+                                                href="/"
+                                                className="text-gray-400 hover:text-white text-sm"
+                                            >
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                href="/about"
+                                                className="text-gray-400 hover:text-white text-sm"
+                                            >
+                                                About
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                href="/api"
+                                                className="text-gray-400 hover:text-white text-sm"
+                                            >
+                                                API
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                href="/blog"
+                                                className="text-gray-400 hover:text-white text-sm"
+                                            >
+                                                Blog
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                            <div className="space-y-4">
-                                <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400">
-                                    Legal
-                                </h4>
-                                <ul className="space-y-2">
-                                    <li>
-                                        <Link
-                                            href="/terms"
-                                            className="text-gray-400 hover:text-white text-sm"
-                                        >
-                                            Terms of Service
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="/privacy"
-                                            className="text-gray-400 hover:text-white text-sm"
-                                        >
-                                            Privacy Policy
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="/cookies"
-                                            className="text-gray-400 hover:text-white text-sm"
-                                        >
-                                            Cookie Policy
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div>
+                                    <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-3">
+                                        Legal
+                                    </h4>
+                                    <ul className="space-y-2">
+                                        <li>
+                                            <Link
+                                                href="/terms"
+                                                className="text-gray-400 hover:text-white text-sm"
+                                            >
+                                                Terms of Service
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                href="/privacy"
+                                                className="text-gray-400 hover:text-white text-sm"
+                                            >
+                                                Privacy Policy
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                href="/cookies"
+                                                className="text-gray-400 hover:text-white text-sm"
+                                            >
+                                                Cookie Policy
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                            <div className="space-y-4">
-                                <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400">
-                                    Stay updated
-                                </h4>
-                                <p className="text-gray-400 text-sm">
-                                    Subscribe to our newsletter for the latest
-                                    updates.
-                                </p>
-                                <form className="flex">
-                                    <input
-                                        type="email"
-                                        placeholder="Your email"
-                                        className="bg-gray-900 text-gray-200 px-4 py-2 rounded-l-md text-sm flex-grow border border-gray-800 focus:outline-none focus:border-gray-600"
-                                        required
-                                    />
-                                    <button
-                                        type="submit"
-                                        className="bg-red-900 hover:bg-red-800 px-4 py-2 rounded-r-md"
-                                        aria-label="Subscribe"
-                                    >
-                                        <Send className="h-4 w-4" />
-                                    </button>
-                                </form>
+                                {/* Newsletter signup - restyled */}
+                                <div>
+                                    <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-3">
+                                        Stay updated
+                                    </h4>
+                                    <p className="text-gray-400 text-sm mb-3">
+                                        Subscribe for the latest updates.
+                                    </p>
+                                    <form className="relative">
+                                        <input
+                                            type="email"
+                                            placeholder="Your email address"
+                                            className="w-full bg-gray-900/50 backdrop-blur-sm text-gray-200 px-4 py-2.5 rounded-lg text-sm border border-gray-800/50 focus:outline-none focus:ring-1 focus:ring-red-900/50"
+                                            required
+                                        />
+                                        <button
+                                            type="submit"
+                                            className="absolute right-2 top-1/2 -translate-y-1/2 text-red-500 hover:text-red-400 p-1"
+                                            aria-label="Subscribe"
+                                        >
+                                            <Send className="h-4 w-4" />
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
 
-                        <div className="border-t border-gray-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center">
+                        {/* Bottom copyright bar - removed border and increased spacing */}
+                        <div className="pt-8 mt-10 flex flex-col md:flex-row justify-between items-center">
                             <p className="text-gray-500 text-sm">
                                 &copy; {new Date().getFullYear()} TensorForest.
                                 All rights reserved.
