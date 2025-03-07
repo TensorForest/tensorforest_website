@@ -1,11 +1,11 @@
 import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+// Removed SpeedInsights import
 
 export function Analytics() {
     return (
         <>
             <VercelAnalytics />
-            <SpeedInsights />
+            {/* SpeedInsights component removed */}
         </>
     );
 }
