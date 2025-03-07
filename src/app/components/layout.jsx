@@ -80,7 +80,7 @@ export function Layout({ children }) {
                             {/* Mobile Menu Button and CTA */}
                             <div className="flex md:hidden gap-4 items-center">
                                 <Link
-                                    href="/join"
+                                    href="/join-us"
                                     className="flex items-center gap-1 bg-red-900/60 hover:bg-red-900/80 px-3 py-1.5 text-sm rounded-lg"
                                 >
                                     <span>Join</span>
@@ -103,7 +103,7 @@ export function Layout({ children }) {
                             {/* Desktop CTA */}
                             <div className="hidden md:block">
                                 <Link
-                                    href="/join"
+                                    href="/join-us"
                                     className="flex items-center gap-2 bg-red-900/60 hover:bg-red-900/80 px-4 py-2 rounded-lg"
                                 >
                                     <span>Stay updated</span>
@@ -152,7 +152,7 @@ export function Layout({ children }) {
                                 blog
                             </Link>
                             <Link
-                                href="/join"
+                                href="/join-us"
                                 className="text-2xl hover:text-gray-300"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
