@@ -23,6 +23,15 @@ export function Layout({ children }) {
             document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
+    useEffect(() => {
+        // Force a layout calculation to help with rendering
+        window.requestAnimationFrame(() => {
+            window.requestAnimationFrame(() => {
+                document.body.style.opacity = "1";
+            });
+        });
+    }, []);
+
     return (
         <div
             className={`min-h-screen bg-black text-white ${spaceGrotesk.className}`}
